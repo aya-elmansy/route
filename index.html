@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book store</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="p-4">
+    <div class="container">
+        <h2 class="fw-bolder fontcolor"> Bookmaker</h2>
+        <div class="horizontalline">
+        </div>
+        <div class="container text-center bg-light p-5">
+            <h3 class="fw-bolder"> Bookmark your favorite sites</h3>
+            <label for="sName" class="mt-3"> Site Name</label>
+            <input type="text" id="sName" placeholder="Bookmark Name" class=" form-control mt-4" />
+            <button id="nabtn" class="btn btn-outline-danger d-none form-control"> Name is required</button>
+            <label for="sUrl" class="mt-3">Site URL</label>
+            <input type="text" id="sUrl" placeholder="Website URL" class=" form-control mt-4" />
+            <button id="Ubtn" class="btn btn-outline-danger d-none form-control"> Url is required </button>
+            <button onclick="addBook()" class="btn btn-primary mt-4 submit">Submit</button>
+        </div>
+        <div class="horizontalline">
+        </div>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>Book Name</th>
+                    <th>Book URL</th>
+                    <th>delete</th>
+                    <th>visit</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+        <h6 class="fontcolor mt-5">© 2019 Bookmarker Inc.</h6>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

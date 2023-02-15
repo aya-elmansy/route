@@ -1,0 +1,15 @@
+.fontcolor {
+    color: grey;
+}
+
+.horizontalline {
+    margin: 30px 5px;
+    background-color: rgb(183, 182, 182);
+    height: 1px;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: rgb(2, 16, 59);
+
+}
